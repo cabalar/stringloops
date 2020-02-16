@@ -1,0 +1,22 @@
+Next state: 
+chain(s) = --0->
+
+Next state: passstart(s,f(h1,p)) 
+chain(s) = --1-> h1,n --0->
+
+Next state: passend(s,f(h1,p)) 
+chain(s) = --1-> h1,n --0-> h1,p --2->
+l(0,0)
+
+Next state: passend(s,f(h1,n)) 
+chain(s) = --1-> h1,n --0-> h1,p --2-> h1,n --3->
+l(2,2)
+l(0,0)
+
+Next state: passend(s,f(h1,p)) 
+chain(s) = --1-> h1,n --0-> h1,p --2-> h1,n --3-> h1,p --4->
+l(3,3)
+l(2,2)
+l(0,3)
+l(0,0)
+

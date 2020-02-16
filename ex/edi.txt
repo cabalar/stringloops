@@ -1,0 +1,102 @@
+Next state: 
+chain(s2) = --6-> l(1,1),p --7->
+chain(s1) = --0-> r3,p --1-> r3,n --2->
+chain(ps) = --3-> r2,p --4-> r1,p --5->
+l(1,1)
+
+Next state: pick(1,f(r1,p)) 
+chain(s2) = --6-> l(1,9),p --7->
+chain(s1) = --0-> r3,p --1-> r1,p --8-> r1,n --9-> r3,n --2->
+chain(ps) = --3-> r2,p --4-> r1,p --5->
+l(8,8)
+l(1,9)
+
+Next state: passend(ps,f(l(8,8),p)) 
+chain(s2) = --6-> l(1,9),p --7->
+chain(s1) = --0-> r3,p --1-> r1,p --8-> r1,n --9-> r3,n --2->
+chain(ps) = --3-> r2,p --4-> r1,p --5-> l(8,8),p --10->
+l(8,8)
+l(1,9)
+
+Next state: pull(l(8,8)) 
+chain(s2) = --6-> l(1,9),p --7->
+chain(s1) = --0-> r3,p --1-> l(11,12),p --8->.--9-> r3,n --2->
+chain(ps) = --3-> r2,p --4-> r1,p --5-> r1,n --11-> l(1,9),p --12-> r1,p --10->
+l(11,12)
+l(5,5)
+l(1,9)
+
+Next state: shrink 
+chain(s2) = --6-> l(1,8),p --7->
+chain(s1) = --0-> r3,p --1-> l(11,12),p --8-> r3,n --2->
+chain(ps) = --3-> r2,p --4-> r1,p --5-> r1,n --11-> l(1,8),p --12-> r1,p --10->
+l(11,12)
+l(5,5)
+l(1,8)
+
+Next state: pull(l(5,5)) 
+chain(s2) = --6-> l(1,8),p --7->
+chain(s1) = --0-> r3,p --1->.--8-> r3,n --2->
+chain(ps) = --3-> r2,p --4->.--5->.--11-> l(1,8),p --12-> r1,p --10->
+l(1,8)
+
+Next state: shrink 
+chain(s2) = --6-> l(1,1),p --7->
+chain(s1) = --0-> r3,p --1-> r3,n --2->
+chain(ps) = --3-> r2,p --4-> l(1,1),p --12-> r1,p --10->
+l(1,1)
+
+Next state: slide(r1,n) 
+chain(s2) = --6-> l(1,1),p --7->
+chain(s1) = --0-> r3,p --1-> r3,n --2->
+chain(ps) = --3-> r2,p --4-> r1,p --12-> l(1,1),p --10->
+l(1,1)
+
+Next state: passend(s2,f(l(1,1),n)) pullend(s2) 
+chain(s2) = --6-> l(1,1),p --7-> l(1,1),n --13->
+chain(s1) = --0-> r3,p --1-> r3,n --2->
+chain(ps) = --3-> r2,p --4-> r1,p --12-> l(1,1),p --10->
+l(7,7)
+l(1,1)
+
+Next state: pull(l(7,7)) 
+chain(s2) = --6->.--7->.--13->
+chain(s1) = --0-> r3,p --1-> r3,n --2->
+chain(ps) = --3-> r2,p --4-> r1,p --12-> l(1,1),p --10->
+l(1,1)
+
+Next state: shrink 
+chain(s2) = --6->
+chain(s1) = --0-> r3,p --1-> r3,n --2->
+chain(ps) = --3-> r2,p --4-> r1,p --12-> l(1,1),p --10->
+l(1,1)
+
+Next state: passend(ps,f(l(1,1),n)) pullend(ps) 
+chain(s2) = --6->
+chain(s1) = --0-> r3,p --1-> r3,n --2->
+chain(ps) = --3-> r2,p --4-> r1,p --12-> l(1,1),p --10-> l(1,1),n --14->
+l(10,10)
+l(1,1)
+
+Next state: pull(l(10,10)) 
+chain(s2) = --6->
+chain(s1) = --0-> r3,p --1-> r3,n --2->
+chain(ps) = --3-> r2,p --4-> r1,p --12->.--10->.--14->
+l(1,1)
+
+Next state: shrink 
+chain(s2) = --6->
+chain(s1) = --0-> r3,p --1-> r3,n --2->
+chain(ps) = --3-> r2,p --4-> r1,p --12->
+l(1,1)
+
+Next state: pull(l(1,1)) 
+chain(s2) = --6->
+chain(s1) = --0->.--1->.--2->
+chain(ps) = --3-> r2,p --4-> r1,p --12->
+
+Next state: shrink 
+chain(s2) = --6->
+chain(s1) = --0->
+chain(ps) = --3-> r2,p --4-> r1,p --12->
+

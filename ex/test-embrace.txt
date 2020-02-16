@@ -1,0 +1,32 @@
+Next state: 
+chain(u) = --2->
+chain(t) = --1->
+chain(s) = --0->
+
+Next state: pick(0,f(h1,p)) 
+chain(u) = --2->
+chain(t) = --1->
+chain(s) = --0-> h1,p --3-> h1,n --4->
+l(3,3)
+
+Next state: passend(t,f(l(3,3),p)) 
+chain(u) = --2->
+chain(t) = --1-> l(3,3),p --5->
+chain(s) = --0-> h1,p --3-> h1,n --4->
+l(3,3)
+
+Next state: passend(u,f(l(3,3),p)) 
+chain(u) = --2-> l(3,3),p --6->
+chain(t) = --1-> l(3,3),p --5->
+chain(s) = --0-> h1,p --3-> h1,n --4->
+l(3,3)
+
+Next state: pick(3,f(h1,n)) embrace(1) 
+chain(u) = --2-> l(3,3),p --6->
+chain(t) = --1-> l(8,8),p --5->
+chain(s) = --0-> h1,p --3-> h1,n --7-> h1,p --8-> h1,n --4->
+l(8,8)
+l(7,7)
+l(3,8)
+l(3,3)
+

@@ -1,0 +1,27 @@
+Next state: 
+chain(t) = --1->
+chain(s) = --0->
+
+Next state: passend(s,f(h2,n)) 
+chain(t) = --1->
+chain(s) = --0-> h2,n --2->
+
+Next state: passend(s,f(h1,p)) 
+chain(t) = --1->
+chain(s) = --0-> h2,n --2-> h1,p --3->
+
+Next state: passend(s,f(h2,p)) 
+chain(t) = --1->
+chain(s) = --0-> h2,n --2-> h1,p --3-> h2,p --4->
+l(2,3)
+
+Next state: passend(t,f(l(2,3),n)) 
+chain(t) = --1-> l(2,3),n --5->
+chain(s) = --0-> h2,n --2-> h1,p --3-> h2,p --4->
+l(2,3)
+
+Next state: slide(h1,p) 
+chain(t) = --1-> l(2,2),n --5->
+chain(s) = --0-> h2,n --2-> h2,p --3-> h1,p --4->
+l(2,2)
+

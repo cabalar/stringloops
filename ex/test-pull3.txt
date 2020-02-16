@@ -1,0 +1,45 @@
+Next state: 
+chain(t) = --1->
+chain(s) = --0->
+
+Next state: pick(0,f(h1,n)) 
+chain(t) = --1->
+chain(s) = --0-> h1,n --2-> h1,p --3->
+l(2,2)
+
+Next state: pick(2,f(h1,p)) 
+chain(t) = --1->
+chain(s) = --0-> h1,n --2-> h1,p --4-> h1,n --5-> h1,p --3->
+l(5,5)
+l(4,4)
+l(2,5)
+l(2,2)
+
+Next state: passend(t,f(l(2,2),p)) 
+chain(t) = --1-> l(2,2),p --6->
+chain(s) = --0-> h1,n --2-> h1,p --4-> h1,n --5-> h1,p --3->
+l(5,5)
+l(4,4)
+l(2,5)
+l(2,2)
+
+Next state: passend(t,f(l(5,5),n)) 
+chain(t) = --1-> l(2,2),p --6-> l(5,5),n --7->
+chain(s) = --0-> h1,n --2-> h1,p --4-> h1,n --5-> h1,p --3->
+l(5,5)
+l(4,4)
+l(2,5)
+l(2,2)
+
+Next state: pull(l(4,4)) 
+chain(t) = --1-> l(2,5),p --6-> l(2,5),n --7->
+chain(s) = --0-> h1,n --2->.--4->.--5-> h1,p --3->
+l(6,6)
+l(2,5)
+
+Next state: shrink 
+chain(t) = --1-> l(2,2),p --6-> l(2,2),n --7->
+chain(s) = --0-> h1,n --2-> h1,p --3->
+l(6,6)
+l(2,2)
+

@@ -11,8 +11,6 @@ crossed :- crossedby(_,_).
 
 :- crossedby(Z,_), crossedby(W,_), Z!=W.
 
-pull(X1,X2) :- o(pull(l(X1,X2))).
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 % Uncrossed pull segment
 %  --W-> F --X1->...--X2-> F1 --Y->
@@ -47,7 +45,7 @@ c(cross(Z),F) :- crossedby(Z,_), o(pull(l(_,X2))), 'h(cross(X2),F), 'h(max,M).
 c(next(M+2),U) :- crossedby(Z,_), 'h(next(Z),U), 'h(max,M).
 c(cross(M+2),F1) :- crossed, o(pull(l(_,X2))), 'h(cross(X2),F), F1=@opp(F), 'h(max,M).
 
-% If X has a parent loop P on a different hole, we add crossing:
+% If l(X1,X2) has a parent loop P on a different hole, we add crossing:
 %  --M+1-> P --M+2->
 c(cross(M+1),f(l(A,B),D)) :- 
      o(pull(l(X1,X2))), crossed, 'parentloop(l(X1,X2),l(A,B)),

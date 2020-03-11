@@ -22,7 +22,7 @@ has occurred) and all the fluent values at each state through
 predicate `h(F,V)` (fluent `F` holds value `V`).
 
 For a better illustration, the package includes a Prolog
-program, `display.lp` that draws the chain of crossings of each string
+program, `display.lp` that prints the chain of crossings of each string
 at each state along the trace. This program requires the previous
 installation of the Prolog
 interpreter [SWI-prolog](https://www.swi-prolog.org/). As an example
@@ -57,7 +57,7 @@ ever created.
   prolog queries
   ```
   ?- solve('ex/african.pl').
-  ?- solce('ex/edi.pl').
+  ?- solve('ex/edi.pl').
   ```
 that respectively show the solutions for the African Ring and
   Easy-does-it puzzles. Predicate `solve(E)` with one argument is

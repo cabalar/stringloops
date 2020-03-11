@@ -17,9 +17,9 @@ h(linked(base,tip(post,n)),true).
 #program initial.
 &tel{ &true
       ;> o(passobj(d2,f(ph,n)))
-%      ;> o(passobj(ph,f(ring,n))) 
-%      ;> o(passobj(s2,f(ring,n)))
-%      ;> o(passobj(ring,f(ph,p)))
-%      ;> o(passobj(s2,f(ring,p)))
+      ;> o(passobj(ph,f(ring,n))) 
+      ;> o(passobj(s2,f(ring,n)))
+      ;> o(passobj(ring,f(ph,p)))
+      ;> o(passobj(s2,f(ring,p)))
     }.
 
